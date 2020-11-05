@@ -9,7 +9,8 @@
 
 */
 
-public class Sobremesa {
+// abstract = não permite que objetos sejam instanciados da classe
+public abstract class Sobremesa {
 	// atributos
 	private String sabor;
 	private String recheio;
@@ -85,5 +86,14 @@ public class Sobremesa {
 
 	public String getIngredientes() {
 		return this.ingredientes;
+	}
+
+	public void mostrarInformacoes() {
+		System.out.println("Sabor: " + this.sabor);
+		System.out.println("Recheio: " + this.recheio);
+		System.out.println("Cobertura: " + this.cobertura);
+		System.out.println("Preço: " + this.preco);
+		System.out.println("Peso: " + this.peso);
+		System.out.println("Ingredientes: " + this.ingredientes);
 	}
 }
